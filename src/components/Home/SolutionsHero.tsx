@@ -14,18 +14,18 @@ const AboutInstitute: React.FC = () => {
       <div className="absolute inset-0 backdrop-blur-xs bg-[#f3ebe5]/60" />
 
       {/* Conteúdo */}
-      <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-16 py-16">
-        <div className="max-w-3xl space-y-6">
+      <div className="relative z-10 mx-auto px-6 sm:px-32  py-16">
+        <div className=" space-y-6 tracking-base">
           <h2 className="text-4xl md:text-5xl font-[BrandonBold] text-[#5a4a3a]">
             Sobre o Instituto
           </h2>
 
-          <p className="text-lg md:text-xl text-[#5a4a3a] leading-relaxed font-[BrandonRegular]">
+          <p className="text-sm md:text-xl text-[#5a4a3a] leading-relaxed font-[BrandonRegular]">
             O Instituto de Psicologia Ser e Sentido é um espaço dedicado ao cuidado emocional e ao desenvolvimento humano. 
             Oferecemos atendimento psicológico com acolhimento, ética e respeito à singularidade de cada pessoa.
           </p>
 
-          <p className="text-lg md:text-xl text-[#5a4a3a] leading-relaxed font-[BrandonRegular]">
+          <p className="text-sm md:text-xl text-[#5a4a3a] leading-relaxed font-[BrandonRegular]">
             Nossas soluções incluem psicoterapia individual para adultos, crianças e adolescentes, avaliação psicológica, 
             orientação parental e atendimento online para brasileiros no exterior. Trabalhamos com abordagens humanizadas 
             que promovem autoconhecimento, bem-estar e transformação.

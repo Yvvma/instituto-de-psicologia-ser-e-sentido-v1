@@ -57,7 +57,7 @@ export default function ServicesCarousel() {
           {/* Seta Esquerda */}
           <button
             onClick={() => scroll("left")}
-            className="absolute left-0 top-1/2 -translate-y-1/2 z-10 border-1 border-[#d7a21e] backdrop-blur-xs p-3 rounded-full shadow-lg transition-all"
+            className="absolute left-0 top-1/2 -translate-y-1/2 sm:-translate-x-16 z-10 border-1 border-[#d7a21e] backdrop-blur-xs p-3 rounded-full shadow-lg transition-all"
             aria-label="Anterior"
           >
             <svg className="w-6 h-6 text-[#5a4a3a]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -68,7 +68,7 @@ export default function ServicesCarousel() {
           {/* Container de Cards */}
           <div
             ref={scrollRef}
-            className="flex gap-6 overflow-x-auto scrollbar-hide scroll-smooth px-12 py-2"
+            className="flex gap-6 overflow-x-auto scrollbar-hide scroll-smooth px-8.5 sm:px-0 py-2"
             style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
           >
             {services.map((service) => (
@@ -112,7 +112,7 @@ export default function ServicesCarousel() {
           {/* Seta Direita */}
           <button
             onClick={() => scroll("right")}
-            className="absolute right-0 top-1/2 -translate-y-1/2 z-10 border-1 border-[#d7a21e] backdrop-blur-xs p-3 rounded-full shadow-lg transition-all"
+            className="absolute right-0 top-1/2 -translate-y-1/2 sm:translate-x-16 z-10 border-1 border-[#d7a21e] backdrop-blur-xs p-3 rounded-full shadow-lg transition-all"
             aria-label="Próximo"
           >
             <svg className="w-6 h-6 text-[#5a4a3a]" fill="none" stroke="currentColor" viewBox="0 0 24 24">

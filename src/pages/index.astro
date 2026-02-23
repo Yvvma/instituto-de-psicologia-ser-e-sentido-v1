@@ -1,0 +1,46 @@
+---
+
+
+
+import Layout from '../layouts/Layout.astro';
+
+import BackgroundVideo from '../components/UI/bgVideo';
+
+import ServicesCarousel from '../components/UI/ServicesCarousel';
+import AboutInstitute from '../components/Home/SolutionsHero';
+import FaqContainer from '../components/Home/FaqContainer';
+import ContactForm from '../components/Contato/Form';
+import WelcomeSituations from '../components/Home/WelcomeSituations';
+
+---
+
+<Layout title="Instituto de Psicologia Ser e Sentido">
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+	<div class="relative w-full justify-center items-center bg-black">
+			
+
+			<BackgroundVideo desktopSrc="/videos/instituto-ser-e-sentido.mp4"  mobileSrc="/videos/instituto-ser-e-sentido.mp4" client:load/>
+			
+		</div>
+
+		<div class="flex flex-col w-full sm:overflow-hidden">
+			
+
+			<ServicesCarousel client:load/>
+		
+		
+		<AboutInstitute client:load/>
+		<WelcomeSituations client:load/>
+		<FaqContainer client:load/>
+		
+		
+		
+		<ContactForm client:load/>
+		
+		
+
+		</div>
+		
+	</div>
+</Layout>

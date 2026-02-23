@@ -125,7 +125,7 @@ const ContactForm = () => {
           </label>
 
           {/* Consentimento */}
-          <label className="flex items-start gap-3 text-xs font-[BrandonRegular] text-[#6b5d52]">
+          <label className="flex items-start flex-row gap-2 text-xs font-[BrandonRegular] text-[#6b5d52]">
             <input
               type="checkbox"
               name="consent"
@@ -133,14 +133,16 @@ const ContactForm = () => {
               onChange={handleChange}
               className="mt-1 accent-[#8b7355]"
             />
+            <span>
             Autorizo o Instituto de Psicologia Ser e Sentido a entrar em contato para agendamento e estou de acordo com a{" "}
             <a
               href="/termos-e-privacidade"
-              target="_blank"
+              
               className="underline hover:text-[#8b7355]"
             >
               política de privacidade
             </a>.
+            </span>
           </label>
 
           {/* Botão */}

@@ -64,7 +64,7 @@ export default function HeaderComponent() {
         <a href="/" className="text-xl tracking-widest font-light">
           <img
             src="/logos/logo-1.png"
-            className="max-w-[48px] md:max-w-[64px]"
+            className="max-w-[48px] "
             alt="Logo"
           />
         </a>
@@ -127,14 +127,14 @@ export default function HeaderComponent() {
               className={clsx(
                 "absolute w-8 h-[1.5px] transition-all duration-300",
                 menuOpen ? "rotate-45" : "-translate-y-2",
-                scrolled ? "bg-black" : "bg-[#5e4e27]"
+                scrolled ? "bg-[#5e4e27]" : "bg-[#eec45a]"
               )}
             />
             <span
               className={clsx(
                 "absolute w-8 h-[1.5px] transition-all duration-300",
                 menuOpen ? "-rotate-45" : "translate-y-2",
-                scrolled ? "bg-black" : "bg-[#5e4e27]"
+                scrolled ? "bg-[#5e4e27]" : "bg-[#ebc157]"
               )}
             />
           </button>
